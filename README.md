@@ -5,11 +5,11 @@
 This project implements and compares three algorithms: Insertion Sort, Merge Sort, and Binary Search.
 The goal is to measure and analyze their performance on different array sizes and input types.
 # Algorithm Descriptions
-# Insertion Sort (Basic Sorting)  O(n²)
+# Insertion Sort (Basic Sorting) O(n²)
 Goes through the array from left to right. Each element is picked and inserted into its correct position among the already-sorted elements to its left. Simple but slow on large arrays.
-# Merge Sort (Advanced Sorting)  O(n log n)
+# Merge Sort (Advanced Sorting) O(n log n)
 Divides the array in half recursively until single elements remain, then merges them back in sorted order. Much faster than Insertion Sort on large data.
-# Binary Search (Searching)  O(log n)
+# Binary Search (Searching) O(log n)
 Requires a sorted array. Compares the target with the middle element, then eliminates half of the remaining array each step. Very fast even on large arrays.
 # Experimental Results
 # Performance Table (Random Arrays)
@@ -33,10 +33,10 @@ Merge Sort is faster on medium and large arrays because its complexity is O(n lo
 Insertion Sort can be faster due to lower overhead.
 
 **How does performance change with input size?**
-Insertion Sort grows much faster — from 3 100 ns to 11 219 000 ns (×3600). Merge Sort grows slower from 6 800 ns to 1 084 000 ns (×160). This matches Big-O theory.
+Insertion Sort grows much faster from 3 100 ns to 11 219 000 ns (×3600). Merge Sort grows slower from 6 800 ns to 1 084 000 ns (×160). This matches Big-O theory.
 
 **How does sorted vs unsorted data affect performance?**
-Insertion Sort on a sorted array is nearly 200x faster (54 700 ns vs 10 391 100 ns) because the inner while loop never executes — best case O(n).
+Insertion Sort on a sorted array is nearly 200x faster (54 700 ns vs 10 391 100 ns) because the inner while loop never executes best case O(n).
 
 **Do results match expected Big-O complexity?**
 Yes. Insertion Sort shows quadratic growth, Merge Sort shows near-linear growth, Binary Search stays almost constant regardless of size.
