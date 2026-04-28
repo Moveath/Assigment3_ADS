@@ -20,7 +20,7 @@ Requires a sorted array. Compares the target with the middle element, then elimi
 | Medium (100)  | 102 100 ns     | 81 000 ns    | 800 ns        |
 | Large (1000)  | 11 219 000 ns  | 1 084 000 ns | 1 300 ns      |
 
-# Sorted vs Random — Insertion Sort (size=1000)
+# Sorted vs Random Insertion Sort (size=1000)
 
 | Input Type   | Time           |
 |--------------|----------------|
